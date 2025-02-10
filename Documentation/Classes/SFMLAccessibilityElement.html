@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SFMLAccessibilityElement Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SFMLAccessibilityElement" class="dashAnchor"></a>
+    <a title="SFMLAccessibilityElement Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SFML Docs</a> (89% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SFML Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SFMLAccessibilityElement Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAccessibilityElement.html">SFMLAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAction.html">SFMLAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAnalytics.html">SFMLAnalytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAnnotationView.html">SFMLAnnotationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLBorderLayer.html">SFMLBorderLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLFlyerViewAccessibilityElement.html">SFMLFlyerViewAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLItemAttributes.html">SFMLItemAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLItemID.html">SFMLItemID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLView.html">SFMLView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SFMLActionType.html">SFMLActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SFMLSource.html">SFMLSource</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLAccessibilityElementDelegate.html">SFMLAccessibilityElementDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLImageDownloadTask.html">SFMLImageDownloadTask</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLImageDownloadTaskProvider.html">SFMLImageDownloadTaskProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewAnalyticsDelegate.html">SFMLViewAnalyticsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewDelegate.html">SFMLViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewWayfinderDelegate.html">SFMLViewWayfinderDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SFMLAccessibilityElement</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SFMLAccessibilityElement</span> <span class="p">:</span> <span class="kt">UIAccessibilityElement</span></code></pre>
+
+                </div>
+              </div>
+            <p>All accessiblity elements found in the <code><a href="../Classes/SFMLView.html">SFMLView</a></code> will be subclasses of
+<code>SFMLAccessibilityElement</code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4SFML24SFMLAccessibilityElementC5frameSo6CGRectVvp"></a>
+                    <a name="//apple_ref/swift/Property/frame" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4SFML24SFMLAccessibilityElementC5frameSo6CGRectVvp">frame</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The frame of this accessiblity element. This property should not be changed.
+It is only used when running on iOS 9 and lower. Its value is used to
+compute its <code>accessibilityFrame</code> whenever the scroll view scrolls.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4SFML24SFMLAccessibilityElementC8delegateAA0bC8Delegate_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4SFML24SFMLAccessibilityElementC8delegateAA0bC8Delegate_pSgvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The delegate of this accessiblity element in case further customization
+is needed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SFMLAccessibilityElementDelegate.html">SFMLAccessibilityElementDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4SFML24SFMLAccessibilityElementC4hintSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/hint" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4SFML24SFMLAccessibilityElementC4hintSSSgvp">hint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default hint for the accessibility item. Can be overwritten but
+it is preferable to implement the delegate method where the hint will be
+appended instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4SFML24SFMLAccessibilityElementC5valueSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4SFML24SFMLAccessibilityElementC5valueSSSgvp">value</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default value for the accessibility item. Can be overwritten but
+it is preferable to implement the delegate method where the value will be
+appended instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4SFML24SFMLAccessibilityElementC5labelSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/label" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4SFML24SFMLAccessibilityElementC5labelSSSgvp">label</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default label for the accessibility item. Can be overwritten but
+it is preferable to implement the delegate method where the label will be
+appended instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">label</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLAccessibilityElement(py)accessibilityLabel"></a>
+                    <a name="//apple_ref/swift/Property/accessibilityLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLAccessibilityElement(py)accessibilityLabel">accessibilityLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The accessibility label which uses the <code>accessibilityLabel</code> property and appends the
+return value of the delegate&rsquo;s <code>sfmlAccessibilityLabelPrefix(element:)</code>
+if not nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">accessibilityLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLAccessibilityElement(py)accessibilityValue"></a>
+                    <a name="//apple_ref/swift/Property/accessibilityValue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLAccessibilityElement(py)accessibilityValue">accessibilityValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The accessibility value which uses the <code><a href="../Classes/SFMLAccessibilityElement.html#/s:4SFML24SFMLAccessibilityElementC5valueSSSgvp">value</a></code> property and appends the
+return value of the delegate&rsquo;s <code>sfmlAccessibilityValue(element:)</code>
+if not nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">accessibilityValue</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLAccessibilityElement(py)accessibilityHint"></a>
+                    <a name="//apple_ref/swift/Property/accessibilityHint" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLAccessibilityElement(py)accessibilityHint">accessibilityHint</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The accessibility hint which uses the <code><a href="../Classes/SFMLAccessibilityElement.html#/s:4SFML24SFMLAccessibilityElementC4hintSSSgvp">hint</a></code> property and appends the
+return value of the delegate&rsquo;s <code>flyerViewItemAccessibilityHint(itemID:)</code>
+if not nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">accessibilityHint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLAccessibilityElement(im)initWithAccessibilityContainer:"></a>
+                    <a name="//apple_ref/swift/Method/init(accessibilityContainer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLAccessibilityElement(im)initWithAccessibilityContainer:">init(accessibilityContainer:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default initializer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">(</span><span class="n">accessibilityContainer</span> <span class="nv">container</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLAccessibilityElement(im)isEqual:"></a>
+                    <a name="//apple_ref/swift/Method/isEqual(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLAccessibilityElement(im)isEqual:">isEqual(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">isEqual</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2020 Flipp, Inc. All Rights Reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

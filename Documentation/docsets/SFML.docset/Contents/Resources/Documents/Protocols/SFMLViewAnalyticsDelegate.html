@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SFMLViewAnalyticsDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/SFMLViewAnalyticsDelegate" class="dashAnchor"></a>
+    <a title="SFMLViewAnalyticsDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SFML Docs</a> (89% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SFML Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SFMLViewAnalyticsDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAccessibilityElement.html">SFMLAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAction.html">SFMLAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAnalytics.html">SFMLAnalytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAnnotationView.html">SFMLAnnotationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLBorderLayer.html">SFMLBorderLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLFlyerViewAccessibilityElement.html">SFMLFlyerViewAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLItemAttributes.html">SFMLItemAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLItemID.html">SFMLItemID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLView.html">SFMLView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SFMLActionType.html">SFMLActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SFMLSource.html">SFMLSource</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLAccessibilityElementDelegate.html">SFMLAccessibilityElementDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLImageDownloadTask.html">SFMLImageDownloadTask</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLImageDownloadTaskProvider.html">SFMLImageDownloadTaskProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewAnalyticsDelegate.html">SFMLViewAnalyticsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewDelegate.html">SFMLViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewWayfinderDelegate.html">SFMLViewWayfinderDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SFMLViewAnalyticsDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SFMLViewAnalyticsDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Objects conforming to this protocol are notified of analytics events. After
+these methods are called, the object is free to send any relevant information
+to the desired analytics service.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewDidOpenAnalyticsEvent:"></a>
+                    <a name="//apple_ref/swift/Method/sfmlViewDidOpenAnalyticsEvent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewDidOpenAnalyticsEvent:">sfmlViewDidOpenAnalyticsEvent(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the delegate that the view has become visible. This is not called if the
+view has not successfully loaded.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sfmlViewDidOpenAnalyticsEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewEngagedVisitAnalyticsEvent:"></a>
+                    <a name="//apple_ref/swift/Method/sfmlViewEngagedVisitAnalyticsEvent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewEngagedVisitAnalyticsEvent:">sfmlViewEngagedVisitAnalyticsEvent(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the delegate that an engaged visit event was triggered. This event
+is only triggered once per &ldquo;visible&rdquo; session. When <code>isVisible</code> is to <code>false</code>,
+the engaged visit throttle is reset and the next time <code>isVisible</code> is <code>true</code>,
+and engaged visit event will trigger.</p>
+
+<p>Currently the following events trigger an engaged visit:</p>
+
+<ul>
+<li>Waiting for &lt;<code>engagedVisitDelay</code>&gt; after load and not interacting with the view</li>
+<li><p>Interacting with the view (scrolling, zooming, tapping/long pressing on an item</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sfmlViewEngagedVisitAnalyticsEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)additionalViewportInsetsForSFMLView:"></a>
+                    <a name="//apple_ref/swift/Method/additionalViewportInsetsForSFMLView(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)additionalViewportInsetsForSFMLView:">additionalViewportInsetsForSFMLView(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Asks the delegate if there are any insets to consider which obscure the top or bottom of the
+<code><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>. This is called when the analytics component is about to start calculating
+item impressions, and is used to get a more accurate viewport size.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">additionalViewportInsetsForSFMLView</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIEdgeInsets</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code> who might have other views overlaid on top obscuring its
+top or bottom.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewItemImpressionsAnalyticsEvent:visibleItemIDs:"></a>
+                    <a name="//apple_ref/swift/Method/sfmlViewItemImpressionsAnalyticsEvent(_:visibleItemIDs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewItemImpressionsAnalyticsEvent:visibleItemIDs:">sfmlViewItemImpressionsAnalyticsEvent(_:<wbr>visibleItemIDs:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the delegate that an item impressions event was triggered. This event
+is triggered when a certain amount of time has passed after the <code><a href="../Classes/SFMLView.html">SFMLView</a></code>
+has stopped scrolling or hasn&rsquo;t been interacted with. See <code>AnalyticsManager</code>
+to view or change the duration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sfmlViewItemImpressionsAnalyticsEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></span><span class="p">,</span> <span class="nv">visibleItemIDs</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>visibleItemIDs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A set containing the ID of items on the screen.
+An item is considered to be on screen if 50% or more of it is visible or
+if it takes up 50% or more of the viewport.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewItemViewableImpressionsAnalyticsEvent:visibleItemIDs:"></a>
+                    <a name="//apple_ref/swift/Method/sfmlViewItemViewableImpressionsAnalyticsEvent(_:visibleItemIDs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewItemViewableImpressionsAnalyticsEvent:visibleItemIDs:">sfmlViewItemViewableImpressionsAnalyticsEvent(_:<wbr>visibleItemIDs:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the delegate that an item viewable impressions event was triggered. This event
+is triggered when a certain amount of time has passed after the <code><a href="../Classes/SFMLView.html">SFMLView</a></code>
+has stopped scrolling or hasn&rsquo;t been interacted with. See <code>AnalyticsManager</code>
+to view or change the duration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sfmlViewItemViewableImpressionsAnalyticsEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></span><span class="p">,</span> <span class="nv">visibleItemIDs</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>visibleItemIDs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A set containing the ID of items on the screen.
+An item is considered to be on screen if 50% or more of it is visible or
+if it takes up 50% or more of the viewport.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewWayfinderDidOpenAnalyticsEvent:highlightedCategory:"></a>
+                    <a name="//apple_ref/swift/Method/sfmlViewWayfinderDidOpenAnalyticsEvent(_:highlightedCategory:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewWayfinderDidOpenAnalyticsEvent:highlightedCategory:">sfmlViewWayfinderDidOpenAnalyticsEvent(_:<wbr>highlightedCategory:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the delegate that the wayfinder category list has become visible.
+This event is not triggered if there are no wayfinding categories in the
+storefront.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sfmlViewWayfinderDidOpenAnalyticsEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></span><span class="p">,</span> <span class="nv">highlightedCategory</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>highlightedCategory</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the currently highlighted category.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewDidSelectWayfinderCategoryAnalyticsEvent:selectedCategory:"></a>
+                    <a name="//apple_ref/swift/Method/sfmlViewDidSelectWayfinderCategoryAnalyticsEvent(_:selectedCategory:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(pl)SFMLViewAnalyticsDelegate(im)sfmlViewDidSelectWayfinderCategoryAnalyticsEvent:selectedCategory:">sfmlViewDidSelectWayfinderCategoryAnalyticsEvent(_:<wbr>selectedCategory:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies the delegate that a category in the wayfinder has been selected
+by the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sfmlViewDidSelectWayfinderCategoryAnalyticsEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">view</span><span class="p">:</span> <span class="kt"><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></span><span class="p">,</span> <span class="nv">selectedCategory</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>view</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selectedCategory</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the selected category.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2020 Flipp, Inc. All Rights Reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

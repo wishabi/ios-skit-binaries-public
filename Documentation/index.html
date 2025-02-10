@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SFML  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="SFML  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">SFML Docs</a> (89% documented)</p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">SFML Reference</a>
+        <img id="carat" src="img/carat.png" />
+        SFML  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/SFMLAccessibilityElement.html">SFMLAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLAction.html">SFMLAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLAnalytics.html">SFMLAnalytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLAnnotationView.html">SFMLAnnotationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLBorderLayer.html">SFMLBorderLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLFlyerViewAccessibilityElement.html">SFMLFlyerViewAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLItemAttributes.html">SFMLItemAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLItemID.html">SFMLItemID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLView.html">SFMLView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/SFMLActionType.html">SFMLActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/SFMLSource.html">SFMLSource</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/SFMLAccessibilityElementDelegate.html">SFMLAccessibilityElementDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SFMLImageDownloadTask.html">SFMLImageDownloadTask</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SFMLImageDownloadTaskProvider.html">SFMLImageDownloadTaskProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SFMLViewAnalyticsDelegate.html">SFMLViewAnalyticsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SFMLViewDelegate.html">SFMLViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SFMLViewWayfinderDelegate.html">SFMLViewWayfinderDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='storefrontskit' class='heading'>StorefrontsKit</h1>
+
+<p>StorefrontsKit (<code>SFML.xcframework</code>) is a library which renders SFML (Storefronts markup language) in an iOS app. StorefrontsKit is a wholly separate library from FlyerKit, requiring a new integration with a client app. Any classes or functionality coincentally shared between the two are not actively supported and may break at any time. This readme assumes it is being used as a standalone binary and not through a depedency management system like Carthage.</p>
+
+<p><code>SFMLStatic.xcframework</code> is a static version of the library. To correctly compile it in your project be sure to add &lsquo;-lc++&rsquo; under &lsquo;Other Linker Flags&rsquo;. </p>
+<h2 id='storefrontskitsample-app' class='heading'>StorefrontsKitSample App</h2>
+
+<p>The provided package imports <code>SFML.xcframework</code> from the <code>Sources</code> folder and uses <code>SDWebImage</code> for image loading through SPM.</p>
+
+<p>See <code>StorefrontViewController.swift</code> in the StorefrontsKitSample to see a live example of how <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code> and its delegate protocols are used/implemented.</p>
+<h1 id='getting-started' class='heading'>Getting Started</h1>
+
+<p>There are several main features and functionalities that StorefrontsKit provides. They are as follows</p>
+
+<ul>
+<li>Rendering a storefront using <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code> or <code><a href="Classes/SFMLView.html">SFMLView</a></code> (superclass without wayfinding capabilities – for 99% of use cases, use <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>)</li>
+<li>Responding to wayfinder events via  <code><a href="Protocols/SFMLViewWayfinderDelegate.html">SFMLViewWayfinderDelegate</a></code></li>
+<li>Being notified of analytics events via <code><a href="Protocols/SFMLViewAnalyticsDelegate.html">SFMLViewAnalyticsDelegate</a></code></li>
+<li>Responding to <code><a href="Classes/SFMLView.html">SFMLView</a></code> events via <code><a href="Protocols/SFMLViewDelegate.html">SFMLViewDelegate</a></code></li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>Use this repo URL as the package URL and select the <code>SFML</code> package when prompted. You may have to add your GitHub credentials to Xcode.</p>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>Link <code>SFML.xcframework</code> to your project by adding it under <code>Linked Frameworks and Libraries</code>. You may also need to add it under <code>Embedded Binaries</code> (if using the standalone binary).</p>
+<h2 id='quick-start' class='heading'>Quick start</h2>
+
+<p>To use StorefrontsKit, there are several integration points that you must implement:</p>
+
+<ul>
+<li>Creating a image download task provider <code><a href="Protocols/SFMLImageDownloadTaskProvider.html">SFMLImageDownloadTaskProvider</a></code></li>
+<li>Creating and laying out an instance of  <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code></li>
+<li>Implementing accessibility</li>
+<li>Loading a storefront</li>
+<li>Providing app lifecycle hookups for <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code> for analytics to function</li>
+</ul>
+
+<p>The following are modified snippets from <code>StorefrontsKitSample</code>.</p>
+<h3 id='creating-an-image-download-task-provider' class='heading'>Creating an image download task provider</h3>
+<pre class="highlight plaintext"><code>class DownloadTaskProvider: SFMLImageDownloadTaskProvider {
+  func newImageDownloadTask() -&gt; SFMLImageDownloadTask {
+    return ImageDownloadTask()
+  }
+}
+
+// A SFMLImageDownloadTask using SDWebImage for image loading
+class ImageDownloadTask: NSObject, SFMLImageDownloadTask {
+  private var task: SDWebImageOperation?
+
+  func cancel() {
+    task?.cancel()
+  }
+
+  func loadImage(withURL url: URL,
+                 completion: @escaping (UIImage?, Error?) -&gt; ()) {
+    cancel()
+
+    // Load the image and on completion we call the given completion block.
+    task = SDWebImageManager.shared.loadImage(
+      with: url,
+      options: .retryFailed,
+      progress: nil,
+      completed: { (image, data, error, cacheType, finished, imageURL) in
+        completion(image, error)
+    })
+  }
+}
+</code></pre>
+<h3 id='creating-and-laying-out-an-instance-of-code-storefrontsfmlview-code' class='heading'>Creating and laying out an instance of <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code></h3>
+<pre class="highlight plaintext"><code>// Assuming that self conforms to SFMLImageDownloadTaskProvider
+let storefrontView = StorefrontSFMLView(imageDownloadTaskProvider: self)
+storefrontView.translatesAutoresizingMaskIntoConstraints = false
+view.addSubview(storefrontView)
+
+// Layout the view
+storefrontView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+storefrontView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+storefrontView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+storefrontView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+</code></pre>
+<h3 id='setting-visibility-on-the-code-storefrontsfmlview-code' class='heading'>Setting visibility on the <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code></h3>
+
+<p>Set the <code>isVisible</code> property appropriately, for example on view lifecycle events of the 
+the view controller the <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code> belongs to (<code>viewWillAppear(_:)</code>, etc.). This 
+ensures certain analytics tracking methods are called correctly.</p>
+<h3 id='implementing-accessibility' class='heading'>Implementing accessibility</h3>
+
+<p>Every element that is accessible is represented by a <code>UIAccessibilityElement</code> (or subclass) object. This includes native elements (like <code>UIView</code>s, <code>UIButton</code>s, etc.). Their native accessibility properties are unused.</p>
+
+<p>All accessiblity elements are then set as an array on the <code>accessibilityElements</code> property of the internal &ldquo;body&rdquo; view that represents all elements of the rendered SFML document. This is to have more control over the order and behaviour of all accessibility elements.</p>
+
+<p>Wayfinder accessibility is provided through the system&rsquo;s accessibility rotor. <code>UIAccessibilityElement</code>s are created out of the wayfinding categories which are accessible via the Headings rotor.</p>
+
+<p>On <code><a href="Classes/SFMLView.html">SFMLView</a></code> or <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>, assign the <code>accessibilityDelegate</code> property. Implement the <code><a href="Protocols/SFMLAccessibilityElementDelegate.html">SFMLAccessibilityElementDelegate</a></code> protocol to provide custom accessibility hints or values. In order to reference a particular item, cast the given item as an <code><a href="Classes/SFMLFlyerViewAccessibilityElement.html">SFMLFlyerViewAccessibilityElement</a></code>.</p>
+<pre class="highlight plaintext"><code>extension StorefrontViewController: SFMLAccessibilityElementDelegate {
+  func sfmlAccessibilityHint(element: SFMLAccessibilityElement) -&gt; String? {
+    guard let flyerAccessibilityElement = element as? SFMLFlyerViewAccessibilityElement,
+      let flyerItem = flyerItems[flyerAccessibilityElement.sourcedItemID.itemID] else {
+        return nil
+    }
+
+    var hint = "Double tap to clip."
+
+    if clippings.contains(flyerItem) {
+      hint = "Double tap to unclip."
+    }
+
+    return hint
+  }
+
+  func sfmlAccessibilityValue(element: SFMLAccessibilityElement) -&gt; String? {
+    return nil
+  }
+}
+
+</code></pre>
+<h3 id='restoring-the-last-focused-accessibility-element' class='heading'>Restoring the last focused accessibility element</h3>
+
+<p>When using VoiceOver, the most recent focused <code>UIAccessibilityElement</code> in the body
+of the <code><a href="Classes/SFMLView.html">SFMLView</a></code> is tracked and focus on it can be restored when the <code><a href="Classes/SFMLView.html">SFMLView</a></code> 
+becomes visible again. Two things are required to enable this functionality:</p>
+
+<ul>
+<li><code>shouldTrackAccessibilityFocus</code> property on <code><a href="Classes/SFMLView.html">SFMLView</a></code> which when <code>true</code>, observes
+<code>UIAccessibility.elementFocusedNotification</code> and tracks the most recent element focused
+in the SFML body. This property automatically mirrors <code>isVisible</code> but can be set
+manually as well depending on the use case. See the code documentation for this property for details. The default value is <code>true</code>.</li>
+<li><code>restoreFocusOnPreviouslyFocusedAccessibilityElement()</code> method on <code><a href="Classes/SFMLView.html">SFMLView</a></code> which 
+when called, attempts to focus on the most recently focused <code>UIAccessibilityElement</code> in the body
+of the <code><a href="Classes/SFMLView.html">SFMLView</a></code>. See code documentation for details on usage.</li>
+</ul>
+
+<p>See the StorefrontsKitSample app for an example implementation.</p>
+<h3 id='loading-a-storefront' class='heading'>Loading a storefront</h3>
+<pre class="highlight plaintext"><code>let data = // Downloaded data from network
+
+// storefrontView is an instance of `StorefrontSFMLView`
+storefrontView.load(
+  sfml: data,
+  titlePreload: { (title, subtitle) -&gt; (Void) in
+    self.title = title
+},
+  completion: { (error) -&gt; (Void) in
+    guard error == nil else {
+      print("Error loading storefront: \(error!)")
+      return
+    }
+
+    // Set visibility to true after load in case it hasn't loaded yet on `viewDidAppear(_:)`
+    self.storefrontView.isVisible = true 
+})
+</code></pre>
+<h3 id='analytics-hookups' class='heading'>Analytics hookups</h3>
+
+<p>Analytics hooks are provided via the <code><a href="Classes/SFMLAnalytics.html">SFMLAnalytics</a></code> class. This class provides a couple customizable static properties (durations) as well as a <code>delegate</code> to receive analytics events. This delegate property is accessible via the <code>analytics</code> property of <code><a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>. </p>
+<pre class="highlight plaintext"><code>storefrontView.analytics.delegate = self
+</code></pre>
+
+<p>See <code><a href="Protocols/SFMLViewAnalyticsDelegate.html">SFMLViewAnalyticsDelegate</a></code> to see which events are available.</p>
+
+<p>Note that in order for analytics events to be triggered correctly, <strong>visibility</strong> of the view must be set correctly via the <code>isVisible</code> property. Please see the documentation for this property for more detail. For any customization (such as timer durations), refer to the static properties in the <code><a href="Classes/SFMLAnalytics.html">SFMLAnalytics</a></code> class.</p>
+
+<p>The areas where visibility should be set are:</p>
+
+<p><strong>On View Lifecycle Methods in <code>UIViewController</code></strong></p>
+<pre class="highlight plaintext"><code>  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+
+    // Set visibility to true when the view appears
+    storefrontView.isVisible = true
+  }
+
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+
+    // Set visibility to false when the view disappears
+    storefrontView.isVisible = false
+  }
+</code></pre>
+
+<p><strong>On App Lifecycle Events</strong></p>
+
+<p>We set up notification handlers for two app lifecycle events (when it goes into the background and when it becomes active):</p>
+<pre class="highlight plaintext"><code>  func setupAppLifecycleNotifications() {
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(applicationDidEnterBackground(_:)),
+      name: .UIApplicationDidEnterBackground,
+      object: nil)
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(applicationDidBecomeActive(_:)),
+      name: .UIApplicationDidBecomeActive,
+      object: nil)
+  }
+
+  @objc func applicationDidEnterBackground(_ notification: NSNotification) {
+    if isViewLoaded &amp;&amp; view.window != nil {
+      storefrontView.isVisible = false
+    }
+  }
+
+  @objc func applicationDidBecomeActive(_ notification: NSNotification) {
+    if isViewLoaded &amp;&amp; view.window != nil {
+      storefrontView.isVisible = true
+    }
+  }
+</code></pre>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2020 Flipp, Inc. All Rights Reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

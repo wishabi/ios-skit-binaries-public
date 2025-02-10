@@ -1,0 +1,343 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SFMLStatic
+import CoreText
+import Foundation
+@_exported import SFMLStatic
+import Swift
+import UIKit
+import _Concurrency
+@objc @_Concurrency.MainActor(unsafe) open class SFMLView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var uuid: Swift.String? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var version: Swift.String? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentHash: Swift.String? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: SFMLStatic.SFMLViewDelegate? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) weak public var accessibilityDelegate: SFMLStatic.SFMLAccessibilityElementDelegate? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var itemIDAttributes: [SFMLStatic.SFMLItemID : SFMLStatic.SFMLItemAttributes] {
+    @objc get
+  }
+  @available(*, deprecated, message: "This is an inefficient property that will be removed in a future version. Use `itemIDAttributes` instead.")
+  @objc @_Concurrency.MainActor(unsafe) public var itemIDs: Swift.Set<SFMLStatic.SFMLItemID> {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var viewportSize: CoreGraphics.CGSize {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var visibleBounds: CoreGraphics.CGRect {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentOffset: CoreGraphics.CGPoint {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentSize: CoreGraphics.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var zoomScale: CoreGraphics.CGFloat {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentOffsetPercentage: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var isLoaded: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var isVisible: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var isLongPressEnabled: Swift.Bool {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var contentView: UIKit.UIView {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var customFontName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var shouldUseDefaultClippingAnnotation: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public var shouldTrackAccessibilityFocus: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public init(imageDownloadTaskProvider: SFMLStatic.SFMLImageDownloadTaskProvider)
+  @objc @_Concurrency.MainActor(unsafe) required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) public func load(sfml: Foundation.Data, headerView: UIKit.UIView? = nil, footerView: UIKit.UIView? = nil, titlePreload: ((Swift.String?, Swift.String?) -> (Swift.Void))?, completion: ((Swift.Error?) -> (Swift.Void))?)
+  @objc @_Concurrency.MainActor(unsafe) public func scrollToAnchor(anchorID: Swift.Int, animated: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func scrollAndZoomToItem(withID id: SFMLStatic.SFMLItemID)
+  @objc @_Concurrency.MainActor(unsafe) public func scrollAndZoomToItem(withID id: SFMLStatic.SFMLItemID, bottomOffset: CoreGraphics.CGFloat)
+  @objc @_Concurrency.MainActor(unsafe) public func scrollAndZoomToItem(withGlobalID globalID: Swift.String)
+  @objc @_Concurrency.MainActor(unsafe) public func scrollAndZoomToItem(withGlobalID globalID: Swift.String, bottomOffset: CoreGraphics.CGFloat)
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func addInteraction(_ interaction: UIKit.UIInteraction)
+  @available(iOS 13.0, *)
+  @_Concurrency.MainActor(unsafe) public func defaultTargetedPreview(forElementWithID id: SFMLStatic.SFMLItemID) -> UIKit.UITargetedPreview?
+  @objc @_Concurrency.MainActor(unsafe) public func addClippingAnnotations(itemIDs: Swift.Set<SFMLStatic.SFMLItemID>, animated: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func addCouponAnnotations(itemIDs: Swift.Set<SFMLStatic.SFMLItemID>)
+  @objc @_Concurrency.MainActor(unsafe) public func removeClippingAnnotations(itemIDs: Swift.Set<SFMLStatic.SFMLItemID>, animated: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public func restoreFocusOnPreviouslyFocusedAccessibilityElement()
+  @objc deinit
+}
+extension SFMLStatic.SFMLView : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func viewForZooming(in scrollView: UIKit.UIScrollView) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?, atScale scale: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScrollToTop(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreGraphics.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreGraphics.CGPoint>)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewWillBeginDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) public func attributes(forElementAt location: CoreGraphics.CGPoint) -> SFMLStatic.SFMLItemAttributes?
+}
+extension SFMLStatic.SFMLView : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StorefrontSFMLView : SFMLStatic.SFMLView {
+  @objc @_Concurrency.MainActor(unsafe) weak public var wayfinderDelegate: SFMLStatic.SFMLViewWayfinderDelegate? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var enableWayfinder: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) final public let analytics: SFMLStatic.SFMLAnalytics
+  @objc @_Concurrency.MainActor(unsafe) public var wayfinderCategories: [Swift.String]? {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var wayfinderBackgroundColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var wayfinderPadding: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var wayfinderCategoryTitleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var wayfinderCategoryTitleSelectedColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var wayfinderCategoryTitleHighlightedColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var wayfinderCategorySelectedColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var wayfinderScrollButtonImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public func scrollToSection(sectionTitle: Swift.String, animated: Swift.Bool)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override public init(imageDownloadTaskProvider: SFMLStatic.SFMLImageDownloadTaskProvider)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) public func dismissWayfinding()
+}
+@objc public protocol SFMLViewAnalyticsDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func sfmlViewDidOpenAnalyticsEvent(_ view: SFMLStatic.StorefrontSFMLView)
+  @objc func sfmlViewEngagedVisitAnalyticsEvent(_ view: SFMLStatic.StorefrontSFMLView)
+  @objc func additionalViewportInsetsForSFMLView(_ view: SFMLStatic.StorefrontSFMLView) -> UIKit.UIEdgeInsets
+  @objc func sfmlViewItemImpressionsAnalyticsEvent(_ view: SFMLStatic.StorefrontSFMLView, visibleItemIDs: Swift.Set<SFMLStatic.SFMLItemID>)
+  @objc func sfmlViewItemViewableImpressionsAnalyticsEvent(_ view: SFMLStatic.StorefrontSFMLView, visibleItemIDs: Swift.Set<SFMLStatic.SFMLItemID>)
+  @objc func sfmlViewWayfinderDidOpenAnalyticsEvent(_ view: SFMLStatic.StorefrontSFMLView, highlightedCategory: Swift.String?)
+  @objc func sfmlViewDidSelectWayfinderCategoryAnalyticsEvent(_ view: SFMLStatic.StorefrontSFMLView, selectedCategory: Swift.String)
+}
+@objc public protocol SFMLAccessibilityElementDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func sfmlAccessibilityHint(element: SFMLStatic.SFMLAccessibilityElement) -> Swift.String?
+  @objc func sfmlAccessibilityValue(element: SFMLStatic.SFMLAccessibilityElement) -> Swift.String?
+  @objc func sfmlAccessibilityLabelPrefix(element: SFMLStatic.SFMLAccessibilityElement) -> Swift.String?
+}
+@objc @_Concurrency.MainActor(unsafe) public class SFMLAccessibilityElement : UIKit.UIAccessibilityElement {
+  @_Concurrency.MainActor(unsafe) public var frame: CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) weak public var delegate: SFMLStatic.SFMLAccessibilityElementDelegate?
+  @_Concurrency.MainActor(unsafe) public var hint: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var value: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var label: Swift.String?
+  @objc override dynamic public var accessibilityLabel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var accessibilityValue: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public var accessibilityHint: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(accessibilityContainer container: Any)
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) public class SFMLFlyerViewAccessibilityElement : SFMLStatic.SFMLAccessibilityElement {
+  @_Concurrency.MainActor(unsafe) public var itemID: SFMLStatic.SFMLItemID {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public init(accessibilityContainer container: Any, itemID: SFMLStatic.SFMLItemID)
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class SFMLAnalytics : ObjectiveC.NSObject {
+  @objc weak public var delegate: SFMLStatic.SFMLViewAnalyticsDelegate?
+  @objc public var itemImpressionsDelay: Swift.Double
+  @objc public var itemViewableImpressionsDelay: Swift.Double
+  @objc public var engagedVisitDelay: Swift.Double
+  @objc public func trackEngagedVisit()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension SFMLStatic.SFMLAnalytics : SFMLStatic.SFMLViewDelegate {
+  @objc dynamic public func sfmlViewVisibilityChanged(_ view: SFMLStatic.SFMLView, isVisible: Swift.Bool)
+  @objc dynamic public func sfmlViewDidScrollToTop(_ view: SFMLStatic.SFMLView)
+  @objc dynamic public func sfmlViewDidEndDecelerating(_ view: SFMLStatic.SFMLView)
+  @objc dynamic public func sfmlViewDidEndScrollingAnimation(_ view: SFMLStatic.SFMLView)
+  @objc dynamic public func sfmlViewDidEndZooming(_ view: SFMLStatic.SFMLView, atScale scale: CoreGraphics.CGFloat)
+  @objc dynamic public func sfmlViewDidEndDragging(_ view: SFMLStatic.SFMLView, willDecelerate decelerate: Swift.Bool)
+  @objc dynamic public func sfmlView(_ view: SFMLStatic.SFMLView, didTapItemWithAttributes attributes: SFMLStatic.SFMLItemAttributes)
+  @objc dynamic public func sfmlView(_ view: SFMLStatic.SFMLView, didLongPressItemWithAttributes attributes: SFMLStatic.SFMLItemAttributes)
+  @objc dynamic public func sfmlView(_ view: SFMLStatic.SFMLView, doubleTappedPoint point: CoreGraphics.CGPoint, didZoomIn: Swift.Bool)
+  @objc dynamic public func sfmlViewDidZoom(_ view: SFMLStatic.SFMLView)
+  @objc dynamic public func sfmlViewDidScroll(_ view: SFMLStatic.SFMLView)
+}
+extension SFMLStatic.SFMLAnalytics : SFMLStatic.SFMLViewWayfinderDelegate {
+  @objc dynamic public func storefrontSFMLViewWayfinderWillAppear(_ storefrontView: SFMLStatic.StorefrontSFMLView)
+  @objc dynamic public func storefrontSFMLViewWayfinderDidAppear(_ storefrontView: SFMLStatic.StorefrontSFMLView, highlightedCategory category: Swift.String?)
+  @objc dynamic public func storefrontSFMLViewDidEndWayfinderScroll(_ storefrontView: SFMLStatic.StorefrontSFMLView)
+  @objc dynamic public func storefrontSFMLViewDidStartWayfinderScroll(_ storefrontView: SFMLStatic.StorefrontSFMLView)
+  @objc dynamic public func storefrontSFMLView(_ storefrontView: SFMLStatic.StorefrontSFMLView, didSelectWayfinderCategory category: Swift.String, categoryIndex index: Swift.Int)
+}
+@_hasMissingDesignatedInitializers @objc public class SFMLBorderLayer : QuartzCore.CAShapeLayer {
+  @objc public func updateBorderPath(bounds: CoreGraphics.CGRect)
+  @objc deinit
+}
+@objc public enum SFMLSource : Swift.Int, Swift.CustomStringConvertible {
+  case flyer = 0
+  case ecom
+  case ecomSearch
+  case merchantItem
+  case coupon
+  case offer
+  case action
+  case advertisement
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum SFMLActionType : Swift.Int {
+  case link = 0
+  case noop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class SFMLAnnotationView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) open func insertAnnotationView(animated: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) open func removeAnnotationView(animated: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) open func handleZoomChange(zoomScale: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @objcMembers public class SFMLItemID : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc final public let sourceID: Swift.String
+  @objc final public let source: SFMLStatic.SFMLSource
+  @objc final public let globalID: Swift.String?
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc public init(sourceID: Swift.String, source: SFMLStatic.SFMLSource, globalID: Swift.String? = nil)
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc @objcMembers public class SFMLItemAttributes : ObjectiveC.NSObject {
+  @objc final public let itemID: SFMLStatic.SFMLItemID
+  @objc final public let action: SFMLStatic.SFMLAction?
+  @objc final public let targetAnchorID: Foundation.NSNumber?
+  @objc final public let payload: [Swift.String : Swift.String]
+  @objc public init(itemID: SFMLStatic.SFMLItemID, action: SFMLStatic.SFMLAction?, targetAnchorID: Foundation.NSNumber?, payload: [Swift.String : Swift.String])
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class SFMLAction : ObjectiveC.NSObject {
+  @objc final public let type: SFMLStatic.SFMLActionType
+  @objc final public let ttmURL: Foundation.URL?
+  @objc deinit
+}
+@objc public protocol SFMLViewDelegate {
+  @objc func sfmlViewVisibilityChanged(_ view: SFMLStatic.SFMLView, isVisible: Swift.Bool)
+  @objc func sfmlView(_ view: SFMLStatic.SFMLView, didTapItemWithAttributes attributes: SFMLStatic.SFMLItemAttributes)
+  @objc func sfmlView(_ view: SFMLStatic.SFMLView, didLongPressItemWithAttributes attributes: SFMLStatic.SFMLItemAttributes)
+  @objc func sfmlView(_ view: SFMLStatic.SFMLView, doubleTappedPoint point: CoreGraphics.CGPoint, didZoomIn: Swift.Bool)
+  @objc optional func clippingAnnotationView(forSFMLView view: SFMLStatic.SFMLView) -> SFMLStatic.SFMLAnnotationView?
+  @objc optional func couponAnnotationView(for id: SFMLStatic.SFMLItemID, in view: SFMLStatic.SFMLView) -> SFMLStatic.SFMLAnnotationView?
+  @available(*, unavailable, message: "Deprecated. Please use `couponAnnotationView(for:in:)`.")
+  @objc optional func couponAnnotationView(forSFMLView view: SFMLStatic.SFMLView) -> SFMLStatic.SFMLAnnotationView?
+  @objc optional func sfmlViewDidScroll(_ view: SFMLStatic.SFMLView)
+  @objc optional func sfmlViewDidScrollToTop(_ view: SFMLStatic.SFMLView)
+  @objc optional func sfmlViewWillEndDragging(_ view: SFMLStatic.SFMLView, withVelocity velocity: CoreGraphics.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreGraphics.CGPoint>)
+  @objc optional func sfmlViewDidEndDragging(_ view: SFMLStatic.SFMLView, willDecelerate decelerate: Swift.Bool)
+  @objc optional func sfmlViewDidEndScrollingAnimation(_ view: SFMLStatic.SFMLView)
+  @objc optional func sfmlViewDidZoom(_ view: SFMLStatic.SFMLView)
+  @objc optional func sfmlViewDidEndZooming(_ view: SFMLStatic.SFMLView, atScale scale: CoreGraphics.CGFloat)
+  @objc optional func sfmlViewDidEndDecelerating(_ view: SFMLStatic.SFMLView)
+}
+@objc public protocol SFMLViewWayfinderDelegate {
+  @objc func storefrontSFMLViewWayfinderWillAppear(_ storefrontView: SFMLStatic.StorefrontSFMLView)
+  @objc func storefrontSFMLViewWayfinderDidAppear(_ storefrontView: SFMLStatic.StorefrontSFMLView, highlightedCategory category: Swift.String?)
+  @objc func storefrontSFMLView(_ storefrontView: SFMLStatic.StorefrontSFMLView, didSelectWayfinderCategory category: Swift.String, categoryIndex index: Swift.Int)
+  @objc func storefrontSFMLViewDidStartWayfinderScroll(_ storefrontView: SFMLStatic.StorefrontSFMLView)
+  @objc func storefrontSFMLViewDidEndWayfinderScroll(_ storefrontView: SFMLStatic.StorefrontSFMLView)
+}
+@objc public protocol SFMLImageDownloadTask : ObjectiveC.NSObjectProtocol {
+  @objc func cancel()
+  @objc func loadImage(withURL url: Foundation.URL, completion: @escaping (UIKit.UIImage?, Swift.Error?) -> ())
+}
+@objc public protocol SFMLImageDownloadTaskProvider : ObjectiveC.NSObjectProtocol {
+  @objc func newImageDownloadTask() -> SFMLStatic.SFMLImageDownloadTask
+}
+@objc public protocol SFMLImageLoading : ObjectiveC.NSObjectProtocol {
+  @objc weak var imageDownloadTaskProvider: SFMLStatic.SFMLImageDownloadTaskProvider? { get set }
+}
+extension SFMLStatic.SFMLSource : Swift.Equatable {}
+extension SFMLStatic.SFMLSource : Swift.Hashable {}
+extension SFMLStatic.SFMLSource : Swift.RawRepresentable {}
+extension SFMLStatic.SFMLActionType : Swift.Equatable {}
+extension SFMLStatic.SFMLActionType : Swift.Hashable {}
+extension SFMLStatic.SFMLActionType : Swift.RawRepresentable {}

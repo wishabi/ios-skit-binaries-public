@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SFMLView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SFMLView" class="dashAnchor"></a>
+    <a title="SFMLView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SFML Docs</a> (89% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SFML Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SFMLView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAccessibilityElement.html">SFMLAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAction.html">SFMLAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAnalytics.html">SFMLAnalytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAnnotationView.html">SFMLAnnotationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLBorderLayer.html">SFMLBorderLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLFlyerViewAccessibilityElement.html">SFMLFlyerViewAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLItemAttributes.html">SFMLItemAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLItemID.html">SFMLItemID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLView.html">SFMLView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SFMLActionType.html">SFMLActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SFMLSource.html">SFMLSource</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLAccessibilityElementDelegate.html">SFMLAccessibilityElementDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLImageDownloadTask.html">SFMLImageDownloadTask</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLImageDownloadTaskProvider.html">SFMLImageDownloadTaskProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewAnalyticsDelegate.html">SFMLViewAnalyticsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewDelegate.html">SFMLViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewWayfinderDelegate.html">SFMLViewWayfinderDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SFMLView</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">SFMLView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">SFMLView</span><span class="p">:</span> <span class="kt">UIScrollViewDelegate</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">SFMLView</span><span class="p">:</span> <span class="kt">UIGestureRecognizerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>A view that takes SFML data and displays it. It owns a <code>UIScrollView</code> and provides
+some forwarded scroll view delegate methods should the user need them.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)uuid"></a>
+                    <a name="//apple_ref/swift/Property/uuid" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)uuid">uuid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The UUID for this SFML document. Read-only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">uuid</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)version"></a>
+                    <a name="//apple_ref/swift/Property/version" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)version">version</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The storefront version.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)contentHash"></a>
+                    <a name="//apple_ref/swift/Property/contentHash" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)contentHash">contentHash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The storefront&rsquo;s content hash. Read-only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">contentHash</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)delegate"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The single, external delegate of the <code>SFMLView</code> which is called to act on
+certain events like tapping on an item.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SFMLViewDelegate.html">SFMLViewDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)accessibilityDelegate"></a>
+                    <a name="//apple_ref/swift/Property/accessibilityDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)accessibilityDelegate">accessibilityDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The accessibility delegate. Implement to be able to return custom
+accessibility hints or values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">accessibilityDelegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SFMLAccessibilityElementDelegate.html">SFMLAccessibilityElementDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)itemIDAttributes"></a>
+                    <a name="//apple_ref/swift/Property/itemIDAttributes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)itemIDAttributes">itemIDAttributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A mapping of <code><a href="../Classes/SFMLItemID.html">SFMLItemID</a></code>s to <code>SFMLItemAttribute</code>s.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">itemIDAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span> <span class="p">:</span> <span class="kt"><a href="../Classes/SFMLItemAttributes.html">SFMLItemAttributes</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)itemIDs"></a>
+                    <a name="//apple_ref/swift/Property/itemIDs" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)itemIDs">itemIDs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A set containing all the item IDs in the SFML document. Note that this is
+a computed value. Read-only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "This is an inefficient property that will be removed in a future version. Use `itemIDAttributes` instead.")</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">itemIDs</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)viewportSize"></a>
+                    <a name="//apple_ref/swift/Property/viewportSize" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)viewportSize">viewportSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The size of the internal scrollview. Read-only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">viewportSize</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)visibleBounds"></a>
+                    <a name="//apple_ref/swift/Property/visibleBounds" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)visibleBounds">visibleBounds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The visible bounds of the internal scrollview. Read-only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">visibleBounds</span><span class="p">:</span> <span class="kt">CGRect</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)contentOffset"></a>
+                    <a name="//apple_ref/swift/Property/contentOffset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)contentOffset">contentOffset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The content offset of the internal scrollview. Read-only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">contentOffset</span><span class="p">:</span> <span class="kt">CGPoint</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)contentSize"></a>
+                    <a name="//apple_ref/swift/Property/contentSize" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)contentSize">contentSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The content size of the internal scrollview. This can be set to override the internal
+content size calculated by the scroll view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">contentSize</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)zoomScale"></a>
+                    <a name="//apple_ref/swift/Property/zoomScale" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)zoomScale">zoomScale</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The zoom scale of the internal scrollview. Read-only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">zoomScale</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)contentInset"></a>
+                    <a name="//apple_ref/swift/Property/contentInset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)contentInset">contentInset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The content inset of the internal scrollView.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">contentInset</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)contentOffsetPercentage"></a>
+                    <a name="//apple_ref/swift/Property/contentOffsetPercentage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)contentOffsetPercentage">contentOffsetPercentage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The percentage of the content that the current contentOffset&rsquo;s y point is at.
+This can be used to scroll to a certain percentage of the content
+(i.e. on size class/rotation changes to maintain the content offset before the change).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">contentOffsetPercentage</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)isLoaded"></a>
+                    <a name="//apple_ref/swift/Property/isLoaded" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)isLoaded">isLoaded</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the SFML has finished loading. Read-only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">isLoaded</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)isVisible"></a>
+                    <a name="//apple_ref/swift/Property/isVisible" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)isVisible">isVisible</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A flag which mainly affects whether analytics events on the <code><a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a></code>
+subclass are correctly triggered. This flag exists on the super class so
+its callback can be bundled into <code><a href="../Protocols/SFMLViewDelegate.html">SFMLViewDelegate</a></code>.
+It is the responsibility of the developer to set this flag appropriately.
+Changing this value is only functional if <code><a href="../Classes/SFMLView.html#/c:@M@SFML@objc(cs)SFMLView(py)isLoaded">isLoaded</a></code> is <code>true</code> (this is
+guarded internally so it is not necessary to check it manually).
+<code>isVisible</code> should be <code>true</code> when the view is on screen (<code>viewDidAppear(_:)</code> and <code>viewDidLoad</code>,
+when the app becomes active and it is the front-most view) and it should be
+<code>false</code> when the view leaves the screen (<code>viewWillDisappear(_:)</code> or the app
+goes into the background.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">isVisible</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4SFML8SFMLViewC18isLongPressEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isLongPressEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4SFML8SFMLViewC18isLongPressEnabledSbvp">isLongPressEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A Boolean indicating whether the long press gesture on items in a document is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isLongPressEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)contentView"></a>
+                    <a name="//apple_ref/swift/Property/contentView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)contentView">contentView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The scroll view&rsquo;s main view and the single ancestor of all of the SFML
+element views. It is used to determine content size of the scroll view
+and all accessible elements are stored in this view&rsquo;s
+<code>accessibilityElements</code> property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">contentView</span><span class="p">:</span> <span class="kt">UIView</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Visual%20Customization"></a>
+                <a name="//apple_ref/swift/Section/Visual Customization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Visual%20Customization"></a>
+                  <h3 class="section-name"><p>Visual Customization</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)customFontName"></a>
+                    <a name="//apple_ref/swift/Property/customFontName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)customFontName">customFontName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of a font used any native UI components in the SFML. It is assumed that
+the font has been bundled with the application and registered in its plist.
+Components affected: item grid labels, collapsible layout button, wayfinder category buttons</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">customFontName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)shouldUseDefaultClippingAnnotation"></a>
+                    <a name="//apple_ref/swift/Property/shouldUseDefaultClippingAnnotation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)shouldUseDefaultClippingAnnotation">shouldUseDefaultClippingAnnotation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set this to true if you want the storefront to utilize the default clipping annotation
+(a yellow circle). By default, this bool is set to false, and you will be expected to provide
+a SFMLAnnotationView subclass to the appropriate delegate method if you wish to render a
+clipping annotation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">shouldUseDefaultClippingAnnotation</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Accessibility%20Focus%20Tracking%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Accessibility Focus Tracking Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Accessibility%20Focus%20Tracking%20Properties"></a>
+                  <h3 class="section-name"><p>Accessibility Focus Tracking Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(py)shouldTrackAccessibilityFocus"></a>
+                    <a name="//apple_ref/swift/Property/shouldTrackAccessibilityFocus" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(py)shouldTrackAccessibilityFocus">shouldTrackAccessibilityFocus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the view should track accessibility focus events. The value of
+this property mirrors <code><a href="../Classes/SFMLView.html#/c:@M@SFML@objc(cs)SFMLView(py)isVisible">isVisible</a></code> and is updated automatically.
+You may also manually change this value if desired depending on the use
+case, however note that it will be overridden the next time <code><a href="../Classes/SFMLView.html#/c:@M@SFML@objc(cs)SFMLView(py)isVisible">isVisible</a></code>
+changes.
+An example use case for updating it manually can be if you are displaying
+a custom view on top of <code>SFMLView</code> where <code><a href="../Classes/SFMLView.html#/c:@M@SFML@objc(cs)SFMLView(py)isVisible">isVisible</a></code> wouldn&rsquo;t be set to
+<code>false</code> but business logic dictates that accessibility elements on
+<code>SFMLView</code> should not interactable. In a case like this, you can manually
+set <code>shouldTrackAccessibilityFocus</code> to <code>false</code> before displaying the
+custom view so the last tracked element remains accurate. Upon dismissal
+of this temporary view, you may then call
+<code><a href="../Classes/SFMLView.html#/c:@M@SFML@objc(cs)SFMLView(im)restoreFocusOnPreviouslyFocusedAccessibilityElement">restoreFocusOnPreviouslyFocusedAccessibilityElement()</a></code> to restore focus
+on the last accessibility element focused before presentation of the
+temporary view.
+If restoring the last focused accessibility element UX is not desired,
+simply never call <code><a href="../Classes/SFMLView.html#/c:@M@SFML@objc(cs)SFMLView(im)restoreFocusOnPreviouslyFocusedAccessibilityElement">restoreFocusOnPreviouslyFocusedAccessibilityElement()</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">shouldTrackAccessibilityFocus</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)initWithImageDownloadTaskProvider:"></a>
+                    <a name="//apple_ref/swift/Method/init(imageDownloadTaskProvider:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)initWithImageDownloadTaskProvider:">init(imageDownloadTaskProvider:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default initializer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">imageDownloadTaskProvider</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SFMLImageDownloadTaskProvider.html">SFMLImageDownloadTaskProvider</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>imageDownloadTaskProvider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object conforming to the
+<code><a href="../Protocols/SFMLImageDownloadTaskProvider.html">SFMLImageDownloadTaskProvider</a></code> protocol which is responsible for providing
+image download tasks. NOTE: This is an unowned property.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Loading%20SFML"></a>
+                <a name="//apple_ref/swift/Section/Loading SFML" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Loading%20SFML"></a>
+                  <h3 class="section-name"><p>Loading SFML</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)loadWithSfml:headerView:footerView:titlePreload:completion:"></a>
+                    <a name="//apple_ref/swift/Method/load(sfml:headerView:footerView:titlePreload:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)loadWithSfml:headerView:footerView:titlePreload:completion:">load(sfml:<wbr>headerView:<wbr>footerView:<wbr>titlePreload:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method takes the given SFML <code>Data</code> and attempts to parse and render it.</p>
+
+<p>Note: if this method is called multiple times on the same instance, analytics events such as EV +
+open will fire again. The onus is on the client application to de-dupe as needed (this SDK makes no
+assumptions about the uniqueness of the content it is potentially re-loading).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">load</span><span class="p">(</span><span class="nv">sfml</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span>
+                 <span class="nv">headerView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                 <span class="nv">footerView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                 <span class="nv">titlePreload</span><span class="p">:</span> <span class="p">((</span><span class="kt">String</span><span class="p">?,</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Void</span><span class="p">))?,</span>
+                 <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Void</span><span class="p">))?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sfml</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SFML in the form of <code>Data</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A view that can be rendered above the SFML document.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>footerView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A view that can be rendered below the SFML document.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>titlePreload</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block that is called once the title of the document is parsed.
+This is to allow the title to be displayed before the document is completely rendered.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A completion block that lets the user know when
+rendering is complete or if there was an error encountered.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Navigation"></a>
+                <a name="//apple_ref/swift/Section/Navigation" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Navigation"></a>
+                  <h3 class="section-name"><p>Navigation</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)scrollToAnchorWithAnchorID:animated:"></a>
+                    <a name="//apple_ref/swift/Method/scrollToAnchor(anchorID:animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)scrollToAnchorWithAnchorID:animated:">scrollToAnchor(anchorID:<wbr>animated:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scrolls the scroll view to the view with the given anchor ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">scrollToAnchor</span><span class="p">(</span><span class="nv">anchorID</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>anchorID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The desired anchorID to scroll to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the scroll action should be animated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)scrollAndZoomToItemWithID:"></a>
+                    <a name="//apple_ref/swift/Method/scrollAndZoomToItem(withID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)scrollAndZoomToItemWithID:">scrollAndZoomToItem(withID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scrolls and zooms the scroll view to an item with the given ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">scrollAndZoomToItem</span><span class="p">(</span><span class="n">withID</span> <span class="nv">id</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The id of the desired item to scroll and zoom to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)scrollAndZoomToItemWithID:bottomOffset:"></a>
+                    <a name="//apple_ref/swift/Method/scrollAndZoomToItem(withID:bottomOffset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)scrollAndZoomToItemWithID:bottomOffset:">scrollAndZoomToItem(withID:<wbr>bottomOffset:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scrolls and zooms the scroll view to an item with the given ID while
+handling and offset due to a view covering a portion of the scrollview</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">scrollAndZoomToItem</span><span class="p">(</span><span class="n">withID</span> <span class="nv">id</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span><span class="p">,</span> <span class="nv">bottomOffset</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The id of the desired item to scroll and zoom to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bottomOffset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The height of the covering view</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)scrollAndZoomToItemWithGlobalID:"></a>
+                    <a name="//apple_ref/swift/Method/scrollAndZoomToItem(withGlobalID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)scrollAndZoomToItemWithGlobalID:">scrollAndZoomToItem(withGlobalID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scrolls and zooms the scroll view to an item with the given ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">scrollAndZoomToItem</span><span class="p">(</span><span class="n">withGlobalID</span> <span class="nv">globalID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>globalID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>globalID string of the desired item to scroll and zoom to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)scrollAndZoomToItemWithGlobalID:bottomOffset:"></a>
+                    <a name="//apple_ref/swift/Method/scrollAndZoomToItem(withGlobalID:bottomOffset:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)scrollAndZoomToItemWithGlobalID:bottomOffset:">scrollAndZoomToItem(withGlobalID:<wbr>bottomOffset:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Scrolls and zooms the scroll view to an item with the given globalID while
+handling and offset due to a view covering a portion of the scrollview</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">scrollAndZoomToItem</span><span class="p">(</span><span class="n">withGlobalID</span> <span class="nv">globalID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">bottomOffset</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>globalID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>globalID string of the desired item to scroll and zoom to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bottomOffset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The height of the covering view</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UIInteraction%20Support"></a>
+                <a name="//apple_ref/swift/Section/UIInteraction Support" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/UIInteraction%20Support"></a>
+                  <h3 class="section-name"><p>UIInteraction Support</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)addInteraction:"></a>
+                    <a name="//apple_ref/swift/Method/addInteraction(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)addInteraction:">addInteraction(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an interaction to the document view.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    Because the interaction gets set on the underlying document, this method must be called after the document is loaded.
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Keep in mind that interactions such as <code>UIContextMenuInteraction</code> may take precedence over gestures like long press.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 11.0, *)</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">addInteraction</span><span class="p">(</span><span class="n">_</span> <span class="nv">interaction</span><span class="p">:</span> <span class="kt">UIInteraction</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4SFML8SFMLViewC22defaultTargetedPreview16forElementWithIDSo010UITargetedE0CSgAA08SFMLItemI0C_tF"></a>
+                    <a name="//apple_ref/swift/Method/defaultTargetedPreview(forElementWithID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4SFML8SFMLViewC22defaultTargetedPreview16forElementWithIDSo010UITargetedE0CSgAA08SFMLItemI0C_tF">defaultTargetedPreview(forElementWithID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code>UITargetedPreview</code> for the given item.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(iOS 13.0, *)</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">defaultTargetedPreview</span><span class="p">(</span><span class="n">forElementWithID</span> <span class="nv">id</span><span class="p">:</span> <span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITargetedPreview</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Annotations"></a>
+                <a name="//apple_ref/swift/Section/Annotations" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Annotations"></a>
+                  <h3 class="section-name"><p>Annotations</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)addClippingAnnotationsWithItemIDs:animated:"></a>
+                    <a name="//apple_ref/swift/Method/addClippingAnnotations(itemIDs:animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)addClippingAnnotationsWithItemIDs:animated:">addClippingAnnotations(itemIDs:<wbr>animated:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds clipping annotations for the given source item IDs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addClippingAnnotations</span><span class="p">(</span><span class="nv">itemIDs</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>itemIDs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The item IDs clipping annotations should be added for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the views should be animated. If <code>true</code>, the
+<code>insertAnnotationView(animated:)</code> method of each <code><a href="../Classes/SFMLAnnotationView.html">SFMLAnnotationView</a></code> view is called.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)addCouponAnnotationsWithItemIDs:"></a>
+                    <a name="//apple_ref/swift/Method/addCouponAnnotations(itemIDs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)addCouponAnnotationsWithItemIDs:">addCouponAnnotations(itemIDs:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds coupon annotations for the given source item IDs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">addCouponAnnotations</span><span class="p">(</span><span class="nv">itemIDs</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>itemIDs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The item IDs clipping annotations should be added for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)removeClippingAnnotationsWithItemIDs:animated:"></a>
+                    <a name="//apple_ref/swift/Method/removeClippingAnnotations(itemIDs:animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)removeClippingAnnotationsWithItemIDs:animated:">removeClippingAnnotations(itemIDs:<wbr>animated:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes clipping annotations for the given source item IDs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeClippingAnnotations</span><span class="p">(</span><span class="nv">itemIDs</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/SFMLItemID.html">SFMLItemID</a></span><span class="o">&gt;</span><span class="p">,</span>
+                                      <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>itemIDs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The item IDs clipping annotations should be removed for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the removal of views should be animated or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Accessiblity%20Element%20Focusing"></a>
+                <a name="//apple_ref/swift/Section/Accessiblity Element Focusing" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Accessiblity%20Element%20Focusing"></a>
+                  <h3 class="section-name"><p>Accessiblity Element Focusing</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLView(im)restoreFocusOnPreviouslyFocusedAccessibilityElement"></a>
+                    <a name="//apple_ref/swift/Method/restoreFocusOnPreviouslyFocusedAccessibilityElement()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLView(im)restoreFocusOnPreviouslyFocusedAccessibilityElement">restoreFocusOnPreviouslyFocusedAccessibilityElement()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Restores accessibility focus on the most recently focused accessibility
+element if not nil. Call this when the <code>SFMLView</code> becomes &ldquo;visible&rdquo; again.
+For example when its view controller is the top view controller again
+(e.g. on view life cycle methods) or when a temporary view that was on
+top of <code>SFMLView</code> is dismissed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">restoreFocusOnPreviouslyFocusedAccessibilityElement</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Attributes%20Helper"></a>
+                <a name="//apple_ref/swift/Section/Attributes Helper" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Attributes%20Helper"></a>
+                  <h3 class="section-name"><p>Attributes Helper</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4SFML8SFMLViewC10attributes12forElementAtAA18SFMLItemAttributesCSgSo7CGPointV_tF"></a>
+                    <a name="//apple_ref/swift/Method/attributes(forElementAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4SFML8SFMLViewC10attributes12forElementAtAA18SFMLItemAttributesCSgSo7CGPointV_tF">attributes(forElementAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">attributes</span><span class="p">(</span><span class="n">forElementAt</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">CGPoint</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SFMLItemAttributes.html">SFMLItemAttributes</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2020 Flipp, Inc. All Rights Reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

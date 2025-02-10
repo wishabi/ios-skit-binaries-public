@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SFMLAnnotationView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SFMLAnnotationView" class="dashAnchor"></a>
+    <a title="SFMLAnnotationView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SFML Docs</a> (89% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SFML Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SFMLAnnotationView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAccessibilityElement.html">SFMLAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAction.html">SFMLAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAnalytics.html">SFMLAnalytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLAnnotationView.html">SFMLAnnotationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLBorderLayer.html">SFMLBorderLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLFlyerViewAccessibilityElement.html">SFMLFlyerViewAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLItemAttributes.html">SFMLItemAttributes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLItemID.html">SFMLItemID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMLView.html">SFMLView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StorefrontSFMLView.html">StorefrontSFMLView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SFMLActionType.html">SFMLActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SFMLSource.html">SFMLSource</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLAccessibilityElementDelegate.html">SFMLAccessibilityElementDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLImageDownloadTask.html">SFMLImageDownloadTask</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLImageDownloadTaskProvider.html">SFMLImageDownloadTaskProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewAnalyticsDelegate.html">SFMLViewAnalyticsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewDelegate.html">SFMLViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMLViewWayfinderDelegate.html">SFMLViewWayfinderDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SFMLAnnotationView</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">SFMLAnnotationView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                </div>
+              </div>
+            <p>Annotation views representing <code>SFMLAnnotation</code>s should be subclasses of this view.
+Animations for insertion/removal can be implemented if desired.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLAnnotationView(im)insertAnnotationViewWithAnimated:"></a>
+                    <a name="//apple_ref/swift/Method/insertAnnotationView(animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLAnnotationView(im)insertAnnotationViewWithAnimated:">insertAnnotationView(animated:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when this annotation view is added. Subclass can override.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">insertAnnotationView</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether insertion of the annotation view is animated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLAnnotationView(im)removeAnnotationViewWithAnimated:"></a>
+                    <a name="//apple_ref/swift/Method/removeAnnotationView(animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLAnnotationView(im)removeAnnotationViewWithAnimated:">removeAnnotationView(animated:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when this annotation view is removed. It will not be
+called if this annotation view is removed offscreen. Subclasses can override.
+The given completion block must be called at the end of the implementation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">removeAnnotationView</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether insertion of the annotation view is animated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFML@objc(cs)SFMLAnnotationView(im)handleZoomChangeWithZoomScale:"></a>
+                    <a name="//apple_ref/swift/Method/handleZoomChange(zoomScale:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFML@objc(cs)SFMLAnnotationView(im)handleZoomChangeWithZoomScale:">handleZoomChange(zoomScale:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when this view is being zoomed. This allows an annotation to maintain
+whatever screen size may be appropriate even while being zoomed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">handleZoomChange</span><span class="p">(</span><span class="nv">zoomScale</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoomScale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The zoomScale of the containing view.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2020 Flipp, Inc. All Rights Reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.7</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

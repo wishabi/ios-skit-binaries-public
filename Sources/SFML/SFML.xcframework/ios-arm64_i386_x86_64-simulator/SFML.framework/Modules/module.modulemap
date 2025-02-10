@@ -1,0 +1,11 @@
+framework module SFML {
+  umbrella header "SFML.h"
+
+  export *
+  module * { export * }
+}
+
+module SFML.Swift {
+    header "SFML-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module SFMLStatic {
+  umbrella header "SFMLStatic.h"
+
+  export *
+  module * { export * }
+}
+
+module SFMLStatic.Swift {
+    header "SFMLStatic-Swift.h"
+    requires objc
+}

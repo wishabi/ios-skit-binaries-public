@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/SFMLAccessibilityElement.html">SFMLAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLAnnotationView.html">SFMLAnnotationView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLFlyerViewAccessibilityElement.html">SFMLFlyerViewAccessibilityElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMLView.html">SFMLView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/StorefrontSFMLView.html">StorefrontSFMLView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/SFMLAnnotation.html">SFMLAnnotation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SFMLFlyerViewAccessibilityElementDelegate.html">SFMLFlyerViewAccessibilityElementDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SFMLViewDelegate.html">SFMLViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='sfml-framework' class='heading'>SFML.framework</h1>
+
+<p>SFML.framework is a framework for rendering SFML. Its entry point is <code><a href="Classes/SFMLView.html">SFMLView</a></code>, a <code>UIView</code> that takes SFML data and renders it in its own <code>UIScrollView</code>. See documentation for more details.</p>
+<h2 id='api-documentation' class='heading'>API Documentation</h2>
+
+<p>API documentation can be found at <a href="docs/index.html">docs/index.html</a> (open local file in your browser). This documentation is for external users of the framework and does not include any internal classes. See code comments for documentation on internal classes.</p>
+
+<p>Documentation is generated using Jazzy.</p>
+<h3 id='updating-documentation-steps' class='heading'>Updating Documentation Steps</h3>
+
+<ol>
+<li>Update documentation in code (must use the following formats for generation to work).</li>
+</ol>
+
+<p>For multi-line method descriptions, use the following format:</p>
+<pre class="highlight plaintext"><code>   /**
+   This is a multi-line method description.
+   Use two asterisks at the start.
+
+   - Parameter internalParameterName: Description of parameter.
+   */
+   func someMethod(with internalParameterName: String) {
+     ...
+   }
+</code></pre>
+
+<p>For single-line comments use triple forward slash:</p>
+<pre class="highlight plaintext"><code>   /// Flag for whether this object is special
+   var isSpecial: Bool
+</code></pre>
+
+<p>To hide a public function from any documentation generation, use <code>/// :nodoc:</code>. For example, you may want to hide public implementations of protocols (e.g. <code>UIScrollViewDelegate</code>, etc.).</p>
+<pre class="highlight plaintext"><code>   /// :nodoc:
+   func somePublicMethod() {
+      ...
+   }
+</code></pre>
+
+<ol>
+<li>Install Jazzy and simply run <code>jazzy</code> from the SFML root project folder.</li>
+</ol>
+<h2 id='accessibility' class='heading'>Accessibility</h2>
+
+<p>Every element that is accessible is represented by a <code>UIAccessibilityElement</code> (or subclass) object. This includes native elements (like <code>UIView</code>s, <code>UIButton</code>s, etc.). Their native accessibility properties are unused.</p>
+
+<p>All accessiblity elements are then set as an array on the <code>accessibilityElements</code> property of the subview of the <code>UIScrollView</code>. This is to have more control over the order and behaviour of all accessibility elements. Heading accessibility elements are also created to make wayfinding accessible (via the Headings accessibility rotor option).</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-01-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

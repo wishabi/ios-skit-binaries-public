@@ -1,0 +1,103 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/Enums.swift",
+      "line": 247,
+      "symbol": "SFMLActionType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/Enums.swift",
+      "line": 248,
+      "symbol": "SFMLActionType.link",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLAccessibilityElement.swift",
+      "line": 143,
+      "symbol": "SFMLAccessibilityElement.isEqual(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLAccessibilityElement.swift",
+      "line": 184,
+      "symbol": "SFMLFlyerViewAccessibilityElement.isEqual(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 6,
+      "symbol": "SFMLItemID",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 7,
+      "symbol": "SFMLItemID.sourceID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 8,
+      "symbol": "SFMLItemID.source",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 10,
+      "symbol": "SFMLItemID.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 14,
+      "symbol": "SFMLItemID.init(sourceID:source:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 19,
+      "symbol": "SFMLItemID.hash",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 26,
+      "symbol": "SFMLItemID.isEqual(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 77,
+      "symbol": "SFMLAction.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 78,
+      "symbol": "SFMLAction.ttmURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamchang/Developer/ios-skit/SFML/Views/SFMLBorderLayer.swift",
+      "line": 5,
+      "symbol": "SFMLBorderLayer",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/williamchang/Developer/ios-skit/Scripts"
+}

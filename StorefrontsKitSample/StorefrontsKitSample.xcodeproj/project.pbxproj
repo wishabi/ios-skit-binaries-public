@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D6AEA3A20C5CA6A00BA3674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA3920C5CA6A00BA3674 /* AppDelegate.swift */; };
+		1D6AEA4420C5CA6B00BA3674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6AEA4220C5CA6B00BA3674 /* LaunchScreen.storyboard */; };
+		1D6AEA6320C5D20B00BA3674 /* CouponClippingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA4D20C5D20A00BA3674 /* CouponClippingCell.swift */; };
+		1D6AEA6420C5D20B00BA3674 /* CouponClippingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D6AEA4E20C5D20A00BA3674 /* CouponClippingCell.xib */; };
+		1D6AEA6520C5D20B00BA3674 /* LoyaltyCardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5020C5D20A00BA3674 /* LoyaltyCardManager.swift */; };
+		1D6AEA6620C5D20B00BA3674 /* FlippApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5120C5D20A00BA3674 /* FlippApiManager.swift */; };
+		1D6AEA6720C5D20B00BA3674 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5320C5D20B00BA3674 /* Images.xcassets */; };
+		1D6AEA6820C5D20B00BA3674 /* FlyerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5520C5D20B00BA3674 /* FlyerItem.swift */; };
+		1D6AEA6920C5D20B00BA3674 /* Coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5620C5D20B00BA3674 /* Coupon.swift */; };
+		1D6AEA6B20C5D20B00BA3674 /* FlyerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5920C5D20B00BA3674 /* FlyerListViewController.swift */; };
+		1D6AEA6C20C5D20B00BA3674 /* StoreSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5A20C5D20B00BA3674 /* StoreSelectorViewController.swift */; };
+		1D6AEA6D20C5D20B00BA3674 /* IframeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5B20C5D20B00BA3674 /* IframeViewController.swift */; };
+		1D6AEA6E20C5D20B00BA3674 /* FlyerItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5C20C5D20B00BA3674 /* FlyerItemViewController.xib */; };
+		1D6AEA6F20C5D20B00BA3674 /* CouponViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5D20C5D20B00BA3674 /* CouponViewController.xib */; };
+		1D6AEA7020C5D20B00BA3674 /* StorefrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5E20C5D20B00BA3674 /* StorefrontViewController.swift */; };
+		1D6AEA7120C5D20B00BA3674 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA5F20C5D20B00BA3674 /* VideoViewController.swift */; };
+		1D6AEA7220C5D20B00BA3674 /* PostalCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA6020C5D20B00BA3674 /* PostalCodeViewController.swift */; };
+		1D6AEA7320C5D20B00BA3674 /* FlyerItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA6120C5D20B00BA3674 /* FlyerItemViewController.swift */; };
+		1D6AEA7420C5D20B00BA3674 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6AEA6220C5D20B00BA3674 /* CouponViewController.swift */; };
+		1DD9A5C220F5122A00878E77 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9A5BF20F5122A00878E77 /* Raleway-Medium.ttf */; };
+		1DD9A5C320F5122A00878E77 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9A5C020F5122A00878E77 /* Raleway-Regular.ttf */; };
+		1DD9A5C420F5122A00878E77 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9A5C120F5122A00878E77 /* Raleway-Bold.ttf */; };
+		1DED233129E741020039F66F /* SFML.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C793219265E7545003AC06E /* SFML.xcframework */; };
+		1DED233229E741020039F66F /* SFML.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C793219265E7545003AC06E /* SFML.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5ADA5C37251E14C200BAC12D /* AnnotationViewExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADA5C35251E14C100BAC12D /* AnnotationViewExample.m */; };
+		BEDE49A32638CF79005FEBF7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BEDE49A22638CF79005FEBF7 /* SDWebImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1DED233329E741020039F66F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1DED233229E741020039F66F /* SFML.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D6AEA3620C5CA6A00BA3674 /* StorefrontsKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorefrontsKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6AEA3920C5CA6A00BA3674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D6AEA4320C5CA6B00BA3674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D6AEA4520C5CA6B00BA3674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D6AEA4D20C5D20A00BA3674 /* CouponClippingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponClippingCell.swift; sourceTree = "<group>"; };
+		1D6AEA4E20C5D20A00BA3674 /* CouponClippingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponClippingCell.xib; sourceTree = "<group>"; };
+		1D6AEA5020C5D20A00BA3674 /* LoyaltyCardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoyaltyCardManager.swift; sourceTree = "<group>"; };
+		1D6AEA5120C5D20A00BA3674 /* FlippApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlippApiManager.swift; sourceTree = "<group>"; };
+		1D6AEA5320C5D20B00BA3674 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1D6AEA5520C5D20B00BA3674 /* FlyerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyerItem.swift; sourceTree = "<group>"; };
+		1D6AEA5620C5D20B00BA3674 /* Coupon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coupon.swift; sourceTree = "<group>"; };
+		1D6AEA5920C5D20B00BA3674 /* FlyerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyerListViewController.swift; sourceTree = "<group>"; };
+		1D6AEA5A20C5D20B00BA3674 /* StoreSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSelectorViewController.swift; sourceTree = "<group>"; };
+		1D6AEA5B20C5D20B00BA3674 /* IframeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IframeViewController.swift; sourceTree = "<group>"; };
+		1D6AEA5C20C5D20B00BA3674 /* FlyerItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlyerItemViewController.xib; sourceTree = "<group>"; };
+		1D6AEA5D20C5D20B00BA3674 /* CouponViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponViewController.xib; sourceTree = "<group>"; };
+		1D6AEA5E20C5D20B00BA3674 /* StorefrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorefrontViewController.swift; sourceTree = "<group>"; };
+		1D6AEA5F20C5D20B00BA3674 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		1D6AEA6020C5D20B00BA3674 /* PostalCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostalCodeViewController.swift; sourceTree = "<group>"; };
+		1D6AEA6120C5D20B00BA3674 /* FlyerItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyerItemViewController.swift; sourceTree = "<group>"; };
+		1D6AEA6220C5D20B00BA3674 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
+		1DD9A5BF20F5122A00878E77 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		1DD9A5C020F5122A00878E77 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		1DD9A5C120F5122A00878E77 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		5ADA5C35251E14C100BAC12D /* AnnotationViewExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationViewExample.m; sourceTree = "<group>"; };
+		5ADA5C36251E14C200BAC12D /* AnnotationViewExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationViewExample.h; sourceTree = "<group>"; };
+		7C793219265E7545003AC06E /* SFML.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SFML.xcframework; path = ../Sources/SFML/SFML.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D6AEA3320C5CA6A00BA3674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDE49A32638CF79005FEBF7 /* SDWebImage in Frameworks */,
+				1DED233129E741020039F66F /* SFML.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D6AEA2D20C5CA6A00BA3674 = {
+			isa = PBXGroup;
+			children = (
+				1D6AEA3820C5CA6A00BA3674 /* StorefrontsKitSample */,
+				1D6AEA3720C5CA6A00BA3674 /* Products */,
+				1D6AEA7A20C5D2CE00BA3674 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D6AEA3720C5CA6A00BA3674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6AEA3620C5CA6A00BA3674 /* StorefrontsKitSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D6AEA3820C5CA6A00BA3674 /* StorefrontsKitSample */ = {
+			isa = PBXGroup;
+			children = (
+				1D6AEA3920C5CA6A00BA3674 /* AppDelegate.swift */,
+				1D6AEA5320C5D20B00BA3674 /* Images.xcassets */,
+				1D6AEA4F20C5D20A00BA3674 /* Managers */,
+				1D6AEA5420C5D20B00BA3674 /* Models */,
+				1D6AEA5720C5D20B00BA3674 /* View Controllers */,
+				1D6AEA4C20C5D20A00BA3674 /* Views */,
+				5ADA5C34251E148D00BAC12D /* Examples */,
+				1D6AEA4220C5CA6B00BA3674 /* LaunchScreen.storyboard */,
+				1D6AEA4520C5CA6B00BA3674 /* Info.plist */,
+				1DD9A5BE20F5122A00878E77 /* Resources */,
+			);
+			path = StorefrontsKitSample;
+			sourceTree = "<group>";
+		};
+		1D6AEA4C20C5D20A00BA3674 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D6AEA4D20C5D20A00BA3674 /* CouponClippingCell.swift */,
+				1D6AEA4E20C5D20A00BA3674 /* CouponClippingCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D6AEA4F20C5D20A00BA3674 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1D6AEA5020C5D20A00BA3674 /* LoyaltyCardManager.swift */,
+				1D6AEA5120C5D20A00BA3674 /* FlippApiManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1D6AEA5420C5D20B00BA3674 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D6AEA5520C5D20B00BA3674 /* FlyerItem.swift */,
+				1D6AEA5620C5D20B00BA3674 /* Coupon.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D6AEA5720C5D20B00BA3674 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D6AEA5920C5D20B00BA3674 /* FlyerListViewController.swift */,
+				1D6AEA5A20C5D20B00BA3674 /* StoreSelectorViewController.swift */,
+				1D6AEA5B20C5D20B00BA3674 /* IframeViewController.swift */,
+				1D6AEA5C20C5D20B00BA3674 /* FlyerItemViewController.xib */,
+				1D6AEA5D20C5D20B00BA3674 /* CouponViewController.xib */,
+				1D6AEA5E20C5D20B00BA3674 /* StorefrontViewController.swift */,
+				1D6AEA5F20C5D20B00BA3674 /* VideoViewController.swift */,
+				1D6AEA6020C5D20B00BA3674 /* PostalCodeViewController.swift */,
+				1D6AEA6120C5D20B00BA3674 /* FlyerItemViewController.swift */,
+				1D6AEA6220C5D20B00BA3674 /* CouponViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1D6AEA7A20C5D2CE00BA3674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C793219265E7545003AC06E /* SFML.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DD9A5BE20F5122A00878E77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1DD9A5BF20F5122A00878E77 /* Raleway-Medium.ttf */,
+				1DD9A5C020F5122A00878E77 /* Raleway-Regular.ttf */,
+				1DD9A5C120F5122A00878E77 /* Raleway-Bold.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5ADA5C34251E148D00BAC12D /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				5ADA5C36251E14C200BAC12D /* AnnotationViewExample.h */,
+				5ADA5C35251E14C100BAC12D /* AnnotationViewExample.m */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6AEA3520C5CA6A00BA3674 /* StorefrontsKitSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6AEA4820C5CA6B00BA3674 /* Build configuration list for PBXNativeTarget "StorefrontsKitSample" */;
+			buildPhases = (
+				1D6AEA3220C5CA6A00BA3674 /* Sources */,
+				1D6AEA3320C5CA6A00BA3674 /* Frameworks */,
+				1D6AEA3420C5CA6A00BA3674 /* Resources */,
+				1DED233329E741020039F66F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorefrontsKitSample;
+			packageProductDependencies = (
+				BEDE49A22638CF79005FEBF7 /* SDWebImage */,
+			);
+			productName = StorefrontsKitSample;
+			productReference = 1D6AEA3620C5CA6A00BA3674 /* StorefrontsKitSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D6AEA2E20C5CA6A00BA3674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Flipp;
+				TargetAttributes = {
+					1D6AEA3520C5CA6A00BA3674 = {
+						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 1D6AEA3120C5CA6A00BA3674 /* Build configuration list for PBXProject "StorefrontsKitSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D6AEA2D20C5CA6A00BA3674;
+			packageReferences = (
+				BEDE49A12638CF79005FEBF7 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 1D6AEA3720C5CA6A00BA3674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6AEA3520C5CA6A00BA3674 /* StorefrontsKitSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D6AEA3420C5CA6A00BA3674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D6AEA6420C5D20B00BA3674 /* CouponClippingCell.xib in Resources */,
+				1DD9A5C220F5122A00878E77 /* Raleway-Medium.ttf in Resources */,
+				1D6AEA6720C5D20B00BA3674 /* Images.xcassets in Resources */,
+				1DD9A5C320F5122A00878E77 /* Raleway-Regular.ttf in Resources */,
+				1D6AEA4420C5CA6B00BA3674 /* LaunchScreen.storyboard in Resources */,
+				1D6AEA6F20C5D20B00BA3674 /* CouponViewController.xib in Resources */,
+				1D6AEA6E20C5D20B00BA3674 /* FlyerItemViewController.xib in Resources */,
+				1DD9A5C420F5122A00878E77 /* Raleway-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D6AEA3220C5CA6A00BA3674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D6AEA6620C5D20B00BA3674 /* FlippApiManager.swift in Sources */,
+				1D6AEA7220C5D20B00BA3674 /* PostalCodeViewController.swift in Sources */,
+				1D6AEA7420C5D20B00BA3674 /* CouponViewController.swift in Sources */,
+				5ADA5C37251E14C200BAC12D /* AnnotationViewExample.m in Sources */,
+				1D6AEA3A20C5CA6A00BA3674 /* AppDelegate.swift in Sources */,
+				1D6AEA7120C5D20B00BA3674 /* VideoViewController.swift in Sources */,
+				1D6AEA6820C5D20B00BA3674 /* FlyerItem.swift in Sources */,
+				1D6AEA7020C5D20B00BA3674 /* StorefrontViewController.swift in Sources */,
+				1D6AEA6C20C5D20B00BA3674 /* StoreSelectorViewController.swift in Sources */,
+				1D6AEA6920C5D20B00BA3674 /* Coupon.swift in Sources */,
+				1D6AEA6B20C5D20B00BA3674 /* FlyerListViewController.swift in Sources */,
+				1D6AEA6320C5D20B00BA3674 /* CouponClippingCell.swift in Sources */,
+				1D6AEA6D20C5D20B00BA3674 /* IframeViewController.swift in Sources */,
+				1D6AEA7320C5D20B00BA3674 /* FlyerItemViewController.swift in Sources */,
+				1D6AEA6520C5D20B00BA3674 /* LoyaltyCardManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D6AEA4220C5CA6B00BA3674 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D6AEA4320C5CA6B00BA3674 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6AEA4620C5CA6B00BA3674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D6AEA4720C5CA6B00BA3674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D6AEA4920C5CA6B00BA3674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4L59Q2V96;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = StorefrontsKitSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipp.StorefrontsKitSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6AEA4A20C5CA6B00BA3674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4L59Q2V96;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = StorefrontsKitSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipp.StorefrontsKitSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6AEA3120C5CA6A00BA3674 /* Build configuration list for PBXProject "StorefrontsKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6AEA4620C5CA6B00BA3674 /* Debug */,
+				1D6AEA4720C5CA6B00BA3674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D6AEA4820C5CA6B00BA3674 /* Build configuration list for PBXNativeTarget "StorefrontsKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6AEA4920C5CA6B00BA3674 /* Debug */,
+				1D6AEA4A20C5CA6B00BA3674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEDE49A12638CF79005FEBF7 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEDE49A22638CF79005FEBF7 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEDE49A12638CF79005FEBF7 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1D6AEA2E20C5CA6A00BA3674 /* Project object */;
+}
