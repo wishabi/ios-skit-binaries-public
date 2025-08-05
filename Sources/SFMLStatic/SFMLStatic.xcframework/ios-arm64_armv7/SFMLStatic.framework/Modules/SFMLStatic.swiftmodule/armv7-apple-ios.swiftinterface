@@ -276,10 +276,11 @@ extension SFMLStatic.SFMLAnalytics : SFMLStatic.SFMLViewWayfinderDelegate {
   @objc final public let sourceID: Swift.String
   @objc final public let source: SFMLStatic.SFMLSource
   @objc final public let globalID: Swift.String?
+  final public let isTextBox: Swift.Bool?
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
-  @objc public init(sourceID: Swift.String, source: SFMLStatic.SFMLSource, globalID: Swift.String? = nil)
+  public init(sourceID: Swift.String, source: SFMLStatic.SFMLSource, globalID: Swift.String? = nil, isTextBox: Swift.Bool? = nil)
   @objc override dynamic public var hash: Swift.Int {
     @objc get
   }

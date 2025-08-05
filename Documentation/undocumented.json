@@ -1,124 +1,131 @@
 {
   "warnings": [
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/Enums.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/Enums.swift",
       "line": 265,
       "symbol": "SFMLActionType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/Enums.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/Enums.swift",
       "line": 266,
       "symbol": "SFMLActionType.link",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLAccessibilityElement.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLAccessibilityElement.swift",
       "line": 143,
       "symbol": "SFMLAccessibilityElement.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLAccessibilityElement.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLAccessibilityElement.swift",
       "line": 184,
       "symbol": "SFMLFlyerViewAccessibilityElement.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
       "line": 6,
       "symbol": "SFMLItemID",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
       "line": 7,
       "symbol": "SFMLItemID.sourceID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
       "line": 8,
       "symbol": "SFMLItemID.source",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
       "line": 9,
       "symbol": "SFMLItemID.globalID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
-      "line": 11,
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 10,
+      "symbol": "SFMLItemID.isTextBox",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 12,
       "symbol": "SFMLItemID.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
-      "line": 15,
-      "symbol": "SFMLItemID.init(sourceID:source:globalID:)",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 16,
+      "symbol": "SFMLItemID.init(sourceID:source:globalID:isTextBox:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
-      "line": 21,
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 23,
       "symbol": "SFMLItemID.hash",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
-      "line": 28,
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 30,
       "symbol": "SFMLItemID.isEqual(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
-      "line": 33,
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 35,
       "symbol": "SFMLItemID.copy(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
-      "line": 83,
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 85,
       "symbol": "SFMLAction.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
-      "line": 84,
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Models/SFMLItemAttributes.swift",
+      "line": 86,
       "symbol": "SFMLAction.ttmURL",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Views/SFMLBorderLayer.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Views/SFMLBorderLayer.swift",
       "line": 5,
       "symbol": "SFMLBorderLayer",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/SFML/Views/SFMLView.swift",
+      "file": "/Users/jenkins/_work/ios-skit/ios-skit/SFML/Views/SFMLView.swift",
       "line": 1094,
       "symbol": "SFMLView.attributes(forElementAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/jenkins/actions-runner-1/_work/ios-skit/ios-skit/Scripts"
+  "source_directory": "/Users/jenkins/_work/ios-skit/ios-skit/Scripts"
 }

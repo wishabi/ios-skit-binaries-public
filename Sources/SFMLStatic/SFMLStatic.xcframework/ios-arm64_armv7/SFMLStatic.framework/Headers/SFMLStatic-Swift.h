@@ -573,7 +573,6 @@ SWIFT_CLASS("_TtC10SFMLStatic10SFMLItemID")
 @property (nonatomic, readonly) enum SFMLSource source;
 @property (nonatomic, readonly, copy) NSString * _Nullable globalID;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nonnull instancetype)initWithSourceID:(NSString * _Nonnull)sourceID source:(enum SFMLSource)source globalID:(NSString * _Nullable)globalID OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) NSUInteger hash;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
@@ -1518,7 +1517,6 @@ SWIFT_CLASS("_TtC10SFMLStatic10SFMLItemID")
 @property (nonatomic, readonly) enum SFMLSource source;
 @property (nonatomic, readonly, copy) NSString * _Nullable globalID;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-- (nonnull instancetype)initWithSourceID:(NSString * _Nonnull)sourceID source:(enum SFMLSource)source globalID:(NSString * _Nullable)globalID OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly) NSUInteger hash;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
